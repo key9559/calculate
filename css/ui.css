@@ -4,6 +4,7 @@
   position: relative;
   max-width: 360px;
   height: 100%;
+  padding: 15px;
   margin: auto;
 }
 /* ========================================== END common ========================================== */
@@ -16,9 +17,11 @@
 
 .result {
   width: 100%;
-  min-height: 1em;
+  min-height: 50px;
+  padding: 7px;
   margin-bottom: 10px;
   background-color: #c6fdff;
+  text-align: right;
 }
 
 .button-wrap {
