@@ -17,7 +17,7 @@
 .result {
   width: 100%;
   min-height: 1em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background-color: #c6fdff;
 }
 
@@ -30,11 +30,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding-top: 10px;
 }
 
 .btn-row .btn-wrap {
   width: calc(33.333% - 6px);
+  margin-top: 10px;
 }
 
 .btn-wrap .btn {
@@ -49,6 +51,6 @@
   padding-top: 0;
 }
 
-.icon-wrap .btn-wrap {
+.btn-row .icon-wrap {
   width: calc(20% - 8px);
 }
