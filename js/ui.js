@@ -44,5 +44,28 @@ clearBtn.addEventListener('click', function () {
 equalBtn.addEventListener('click', function () {
   const saveCalc = result.innerText;
 
-  console.log(saveCalc, typeof saveCalc); // string
+  console.log(saveCalc, typeof saveCalc); // string. not number
+  
+  // 글자를 숫자로 바꿔서 연산시키기
+  // 혹은 연산자 누르면 바로 연산되게
+  // 그러려면 전데이터, 후 데이터를 다 저장해야하지않나?
+
+  /*
+  1.
+  const nums = number('90-5');
+  const nums = number(90-5);
+  
+  console.log(nums);
+  둘다 결과는 같음
+  ui.js:50 Uncaught ReferenceError: number is not defined at HTMLButtonElement
+  */
+
+  /*
+  2.
+  const resultNum = Math.floor(saveCalc);
+  console.log(resultNum);
+  NaN
+  */
+
+  console.log(saveCalc * 1);
 })
