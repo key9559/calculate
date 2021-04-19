@@ -14,13 +14,13 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://github.com/" />
+  <meta property="og:url" content="https://key9559.github.io/calculate/" />
   <meta property="og:title" content="계산기" />
   <meta property="og:description" content="스터디 과제 계산기입니다." />
   <!-- ! FIXME: meta thumbnail 설정 -->
   <meta property="og:image" content="img/favicon/favicon.png">
   <!-- Twitter -->
-  <meta property="twitter:url" content="https://github.com/" />
+  <meta property="twitter:url" content="https://key9559.github.io/calculate/" />
   <meta property="twitter:title" content="계산기" />
   <meta property="twitter:description" content="스터디 과제 계산기입니다." />
   
@@ -44,8 +44,83 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset-custom.css">
+  <link rel="stylesheet" href="css/ui.css">
 </head>
 <body>
-  
+  <div class="section">
+    <div class="l-center">
+      <section class="calculator-wrap">
+        <h1 class="result"></h1>
+        <ul class="button-wrap">
+          <li class="btn-row icon-wrap">
+            <div class="btn-wrap">
+              <button type="button" id="plus" class="btn">+</button>
+            </div>
+            <div class="btn-wrap">
+              <button type="button" id="minus" class="btn">-</button>
+            </div>
+            <div class="btn-wrap">
+              <button type="button" id="multi" class="btn">×</button>
+            </div>
+            <div class="btn-wrap">
+              <button type="button" id="division" class="btn">÷</button>
+            </div>
+            <div class="btn-wrap">
+              <button type="button" id="clear" class="btn">C</button>
+            </div>
+          </li>
+          <li class="btn-row numb-wrap">
+            <div class="btn-wrap">
+              <button type="button" id="one" class="btn">1</button>
+            </div>
+            <div class="btn-wrap">
+              <button type="button" id="two" class="btn">2</button>
+            </div>
+            <div class="btn-wrap">
+              <button type="button" id="three" class="btn">3</button>
+            </div>
+          </li>
+          <li class="btn-row numb-wrap">
+            <div class="btn-wrap">
+              <button type="button" id="four" class="btn">4</button>
+            </div>
+            <div class="btn-wrap">
+              <button type="button" id="five" class="btn">5</button>
+            </div>
+            <div class="btn-wrap">
+              <button type="button" id="six" class="btn">6</button>
+            </div>
+          </li>
+          <li class="btn-row numb-wrap">
+            <div class="btn-wrap">
+              <button type="button" id="seven" class="btn">7</button>
+            </div>
+            <div class="btn-wrap">
+              <button type="button" id="eight" class="btn">8</button>
+            </div>
+            <div class="btn-wrap">
+              <button type="button" id="nine" class="btn">9</button>
+            </div>
+          </li>
+          <li class="btn-row numb-wrap">
+            <div class="btn-wrap">
+              <button type="button" id="dot" class="btn">.</button>
+            </div>
+            <div class="btn-wrap">
+              <button type="button" id="zero" class="btn">0</button>
+            </div>
+            <div class="btn-wrap">
+              <button type="button" id="equal" class="btn">=</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/ui.js"></script>
 </body>
 </html>
