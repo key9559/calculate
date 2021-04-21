@@ -87,4 +87,10 @@ for (i = 0; i < calcAry.length; i++) {
 // clear click == reset
 clearBtn.addEventListener("click", function () {
   result.innerText = "";
+  if(myNum !== 0) {
+    myNum = 0;
+  }
+  if(myNum2 !== 0) {
+    myNum2 = 0;
+  }
 });
